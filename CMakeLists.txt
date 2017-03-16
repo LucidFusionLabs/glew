@@ -20,7 +20,7 @@ target_link_libraries ( glewinfo glew )
 add_executable ( visualinfo src/visualinfo.c )
 target_link_libraries ( visualinfo glew )
 
-install_executable ( glewinfo visualinfo )
+#install_executable ( glewinfo visualinfo )
 install_library ( glew )
 install_header ( include/ )
 install_data ( LICENSE.txt README.txt )
