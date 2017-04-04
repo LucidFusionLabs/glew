@@ -14,11 +14,11 @@ include_directories ( include ${OPENGL_INCLUDE_DIR} )
 add_library ( glew src/glew.c )
 target_link_libraries ( glew ${OPENGL_LIBRARIES} )
 
-add_executable ( glewinfo src/glewinfo.c )
-target_link_libraries ( glewinfo glew )
+#add_executable ( glewinfo src/glewinfo.c )
+#target_link_libraries ( glewinfo glew )
 
-add_executable ( visualinfo src/visualinfo.c )
-target_link_libraries ( visualinfo glew )
+#add_executable ( visualinfo src/visualinfo.c )
+#target_link_libraries ( visualinfo glew )
 
 #install_executable ( glewinfo visualinfo )
 install_library ( glew )
