@@ -1,4 +1,4 @@
-# Copyright (C) 2007-2012 LuaDist.
+﻿# Copyright (C) 2007-2012 LuaDist.
 # Created by Peter Drahoš
 # Redistribution and use of this file is allowed according to the terms of the MIT license.
 # For details see the COPYRIGHT file distributed with LuaDist.
@@ -11,7 +11,7 @@ include ( cmake/dist.cmake )
 find_package ( OpenGL REQUIRED )
 include_directories ( include ${OPENGL_INCLUDE_DIR} )
 
-add_library ( glew src/glew.c )
+add_library ( glew STATIC src/glew.c )
 target_link_libraries ( glew ${OPENGL_LIBRARIES} )
 
 #add_executable ( glewinfo src/glewinfo.c )
