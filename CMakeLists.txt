@@ -11,6 +11,10 @@ include ( cmake/dist.cmake )
 find_package ( OpenGL REQUIRED )
 include_directories ( include ${OPENGL_INCLUDE_DIR} )
 
+if(GLEW_DEF)
+  add_definitions(${GLEW_DEF})
+endif()
+
 add_library ( glew STATIC src/glew.c )
 target_link_libraries ( glew ${OPENGL_LIBRARIES} )
 
