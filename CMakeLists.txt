@@ -6,7 +6,7 @@
 
 project ( glew C )
 cmake_minimum_required ( VERSION 2.8 )
-include ( cmake/dist.cmake )
+# include ( cmake/dist.cmake )
 
 find_package ( OpenGL REQUIRED )
 include_directories ( include ${OPENGL_INCLUDE_DIR} )
@@ -25,6 +25,6 @@ target_link_libraries ( glew ${OPENGL_LIBRARIES} )
 #target_link_libraries ( visualinfo glew )
 
 #install_executable ( glewinfo visualinfo )
-install_library ( glew )
-install_header ( include/ )
-install_data ( LICENSE.txt README.txt )
+#install_library ( glew )
+#install_header ( include/ )
+#install_data ( LICENSE.txt README.txt )
